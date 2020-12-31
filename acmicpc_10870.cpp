@@ -1,20 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int Pibonacci(int n)
+
+// Function returning the nth Fibonacci number
+int Fibonacci(int n)
 {
 	if (n == 1)
 		return 1;
 	if (n == 0)
 		return 0;
 
-	return Pibonacci(n - 1) + Pibonacci(n - 2);
+	return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 
 int main()
 {
 	int n;
-
 	cin >> n;
-	cout << Pibonacci(n);
+	cout << Fibonacci(n);
 }
