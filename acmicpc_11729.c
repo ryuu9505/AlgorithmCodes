@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+// Tower of Hanoi
 void Hanoi(int n, int from, int by, int to)
 {
 	if (n == 1)
