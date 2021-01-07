@@ -39,16 +39,17 @@ void merge(int list[], int left, int mid, int right)
 	}
 }
 
+// Merge Sort
 void merge_sort(int list[], int left, int right)
 {
 	int mid;
 
 	if (left < right)
 	{
-		mid = (left + right) / 2;
-		merge_sort(list, left, mid);
-		merge_sort(list, mid + 1, right);
-		merge(list, left, mid, right);
+		mid = (left + right) / 2; // Divide
+		merge_sort(list, left, mid); // Conquer
+		merge_sort(list, mid + 1, right); // Conquer
+		merge(list, left, mid, right); // Combine
 	}
 }
 
